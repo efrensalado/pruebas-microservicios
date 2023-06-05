@@ -1,4 +1,12 @@
 spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://sigerm-prod.database.windows.net:1433;database=Test;encrypt=true;trustServerCertificate=true;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: sigerm-admin@sigerm-prod
+    password: Salado00
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
   application:
     name: plazo-service
   cloud:
